@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="grid.css">
+  <script src="scripts.js" charset="utf-8"></script>
   <title>Grid example</title>
 </head>
 
@@ -15,29 +16,33 @@
   <header>
     <!-- 750px -->
     <nav class="navbar">
-      <a href="#" class="brand">LandX</a>
+      <a href="#" class="brand">Land<span style="color: #0199e6;">X</span></a>
       <button class="toggler"></button>
       <ul class="navbar-nav">
-        <li class="nav-item"><a href="#">Home</a></li>
-        <li class="nav-item"><a href="#">Features</a></li>
-        <li class="nav-item"><a href="#">Services</a></li>
-        <li class="nav-item"><a href="#">Packages</a></li>
-        <li class="nav-item"><a href="#">Testimonials</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
       </ul>
     </nav>
 
-    <h1>Get the Best <span class="blue" style="color: #0199e6;">Solution</span> for Your <b>Business</b></h1>
-    <p>Accelerator photo sharing business school drop out ramen hustle crush it revenue traction platforms. Coworking viral landing page user base.</p>
-    <form action="">
-      <input type="text" placeholder="Your Name">
-      <input type="text" placeholder="Your E-mail">
-      <input type="text" placeholder="Phone Number">
-      <button>Get Started</button>
-    </form>
+    <div class="header-content">
+      <h1>Get the Best <span class="blue" style="color: #0199e6;">Solution</span> for Your <b>Business</b></h1>
+      <p>Accelerator photo sharing business school drop out ramen hustle crush it revenue<br />
+        traction platforms. Coworking viral landing page user base.</p>
+      <div class="hc-form-wrapper">
+        <form action="" class="hc-form">
+          <input type="text" placeholder="Your Name">
+          <input type="text" placeholder="Your E-mail">
+          <input type="text" placeholder="Phone Number">
+          <button onclick="helloWorld()">Get Started</button>
+        </form>
+      </div>
+    </div>
   </header>
   <div class="container">
-    <!-- height 625px -->
     <div class="explore">
       <div class="col">
         <img class="img-fluid" src="explore.png" alt="exp">
@@ -86,7 +91,43 @@
         <img class="img-fluid" src="explore.png" alt="exp">
       </div>
     </div>
-    <div class="features"></div>
+    <div class="features">
+      <h1>LandX Features</h1>
+      <hr class="divider">
+      <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <section class="feature-wrapper">
+        <div class="feature">
+          <i class="fab fa-github"></i>
+          <h3>Text</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, maiores!</p>
+        </div>
+        <div class="feature">
+          <i class="fab fa-github"></i>
+          <h3>Text</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, maiores!</p>
+        </div>
+        <div class="feature">
+          <i class="fab fa-github"></i>
+          <h3>Text</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, maiores!</p>
+        </div>
+        <div class="feature">
+          <i class="fab fa-github"></i>
+          <h3>Text</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, maiores!</p>
+        </div>
+        <div class="feature">
+          <i class="fab fa-github"></i>
+          <h3>Text</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, maiores!</p>
+        </div>
+        <div class="feature">
+          <i class="fab fa-github"></i>
+          <h3>Text</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, maiores!</p>
+        </div>
+      </section>
+    </div>
     <div class="pricing"></div>
     <div class="video"></div>
     <div class="screenshot"></div>
